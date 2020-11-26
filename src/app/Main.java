@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+        // Declare the variable input
         int input;
 
+        // Instantiate the HomeTheaterFacade and it's components
         Amplifier amp = new Amplifier("Top-O-Line Amplifier");
         Tuner tuner = new Tuner("Top-O-Line AM/FM Tuner", amp);
         DvdPlayer dvd = new DvdPlayer("Top-O-Line DVD Player", amp);
@@ -19,6 +20,7 @@ public class Main {
 
         HomeTheaterFacade homeTheater = new HomeTheaterFacade(amp, tuner, dvd, cd, projector, lights, screen, popper);
 
+        // Instantiate the scanner used to get the user input
         Scanner console = new Scanner(System.in);
 
         System.out.println("In the homeTheater you have three options: ");

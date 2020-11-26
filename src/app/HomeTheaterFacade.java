@@ -57,7 +57,7 @@ public class HomeTheaterFacade {
     }
 
     public void listenToMusic(String title) {
-        System.out.println("\nGet ready for the music");
+        System.out.println("Get ready for the music");
         lights.on();
         amp.on();
         amp.setVolume(5);
@@ -74,7 +74,7 @@ public class HomeTheaterFacade {
     }
 
     public void listenToTheRadio(double frequency){
-        System.out.println("\nStart the radio");
+        System.out.println("Start the radio");
         tuner.on();
         tuner.setFrequency(frequency);
         amp.on();
